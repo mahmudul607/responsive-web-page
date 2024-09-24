@@ -12,20 +12,39 @@ body{
     color: black;
 }
 
+
+
+.sub_container{
+    position: relative;
+    height: 100vh;
+}
+
 /* Navbar style */
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2em;
+    padding: 0.2em 5em 0 0;
     background: #333;
     color: white;
 }
 .navbar .logo img{
     width: 8%;
-    height: 100%;
+    height: auto;
     margin-left: 3em;
+}
+.navbar .menu_icon{
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.navbar .menu_icon .bar{
+    width: 2em;
+    height: 0.3em;
+    background-color: black;
+    margin: 5px 5px 0 0;
 }
 
 .nav_items{
@@ -38,7 +57,7 @@ body{
     text-decoration: none;
     color: white;
 }
-
+/* hero section */
 .hero_section{
     text-align: center;
     display: flex;
@@ -93,3 +112,56 @@ body{
     font-size: 1em;
     color: #666;
 }
+
+/* Media queries for responsive style */
+
+
+@media (max-width: 767.99px) {
+    .nav_items {
+        display: none;
+        flex-direction: column;
+    }
+    .navbar{
+       position: relative;
+        padding: 0 2em;
+        z-index: 100;
+        background-color: transparent;
+       
+    }
+    .navbar .logo img{
+        width: 20%;
+      
+    }
+    .navbar .menu_icon{
+        display: block;
+    }
+
+    .hero_section{
+        position: absolute;
+        top: 0;
+       height: 100vh;
+        width: 100%;
+        
+    }
+    .hero_section h1{
+        font-size: 1.5em;
+    }
+    .hero_section p{
+        font-size: 1em;
+    }
+    .navbar .menu_icon .bar{
+        background-color: white;
+    }
+
+    .active{
+        display: block;
+        top: 100%;
+        right:10%;
+        position: absolute;
+    }
+
+
+}
+
+
+
