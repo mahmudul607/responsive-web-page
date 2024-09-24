@@ -87,6 +87,8 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
     padding: 2.5em;
+    position: relative;
+
 }
 
 .card{
