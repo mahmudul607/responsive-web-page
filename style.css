@@ -64,7 +64,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('./images/bg2.webp') center center/cover;
+    background: url(./images/bg2.webp) center center/cover;
     background-repeat: no-repeat;
     color: white;
 }
